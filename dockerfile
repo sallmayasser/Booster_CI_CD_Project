@@ -23,8 +23,8 @@ RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
 # DB migration 
-RUN  python3.6 manage.py makemigrations && \
-     python3.6 manage.py migrate
+RUN  python manage.py makemigrations && \
+     python manage.py migrate
 
 
 # Copy Django project code
